@@ -6,7 +6,8 @@
 .page-hero-banner {
   position: relative;
   background: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
-  height: 290px;
+  min-height: 290px;
+  padding: 2.5rem 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,6 +45,7 @@
   font-weight: 800;
   margin-bottom: 0.5rem;
   letter-spacing: -0.02em;
+  overflow-wrap: anywhere;
 }
 
 .main-container {
@@ -53,6 +55,7 @@
   display: grid;
   grid-template-columns: 2.2fr 1fr;
   gap: 2.5rem;
+  min-width: 0;
 }
 
 @media (max-width: 900px) {
@@ -73,8 +76,15 @@
 
 .listings-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
   gap: 1.8rem;
+}
+
+.listings-section,
+.sidebar-section,
+.detail-main-content,
+.form-main-section {
+  min-width: 0;
 }
 
 .listing-card {
@@ -209,4 +219,46 @@
 .sidebar-apply-link:hover {
   background: #1e293b;
   transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .page-hero-banner {
+    min-height: 230px;
+    padding: 2rem 1rem;
+  }
+
+  .hero-content .badge {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.75rem;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(1.7rem, 8vw, 2.25rem);
+    line-height: 1.15;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+
+  .main-container {
+    margin: 2rem auto;
+    padding: 0 1rem;
+    gap: 1.5rem;
+  }
+
+  .listings-section .section-header h2 {
+    font-size: 1.5rem;
+    line-height: 1.25;
+  }
+
+  .listings-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+  }
+
+  .listing-card,
+  .sidebar-card {
+    padding: 1.25rem;
+  }
 }

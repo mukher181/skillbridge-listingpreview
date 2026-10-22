@@ -35,6 +35,17 @@ body {
   overflow-x: hidden;
 }
 
+img,
+svg {
+  max-width: 100%;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
 /* Page entrance 3D Float animation */
 .page-transition {
   animation: entrance3D 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
@@ -59,4 +70,15 @@ body {
 @keyframes pulseGlow {
   0%, 100% { box-shadow: 0 0 15px rgba(37, 99, 235, 0.2); }
   50% { box-shadow: 0 0 30px rgba(37, 99, 235, 0.4); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
