@@ -1,0 +1,156 @@
+.detail-container {
+  max-width: 850px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 700;
+  transition: var(--transition-3d);
+}
+
+.back-link:hover {
+  transform: translateX(-4px);
+}
+
+.detail-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: var(--shadow-3d);
+  transition: var(--transition-3d);
+}
+
+.detail-card:hover {
+  box-shadow: var(--shadow-3d-hover);
+}
+
+.meta-badge-row {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.status-badge {
+  font-size: 0.8rem;
+  color: #166534;
+  background: #dcfce7;
+  padding: 0.3rem 0.7rem;
+  border-radius: 8px;
+  font-weight: 700;
+  border: 1px solid #bbf7d0;
+}
+
+.detail-card h1 {
+  font-size: 2.2rem;
+  color: #0f172a;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.company-text {
+  color: #475569;
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+
+.divider {
+  border: 0;
+  border-top: 1px solid #e2e8f0;
+  margin: 1.5rem 0;
+}
+
+.detail-card h3 {
+  font-size: 1.3rem;
+  color: #0f172a;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+}
+
+.desc-text {
+  color: #334155;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.perks-box {
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 2rem;
+}
+
+.perks-box h4 {
+  font-size: 1rem;
+  color: #0f172a;
+  margin-bottom: 0.75rem;
+}
+
+.perks-box ul {
+  padding-left: 1.25rem;
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.apply-trigger-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+  color: white;
+  padding: 0.85rem 2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(22, 163, 74, 0.3);
+  transition: var(--transition-3d);
+}
+
+.apply-trigger-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(22, 163, 74, 0.45);
+}
+
+.not-found-detail {
+  text-align: center;
+  margin-top: 5rem;
+  padding: 0 1rem;
+}
+
+.error-code {
+  font-size: 4.5rem;
+  font-weight: 900;
+  color: #ef4444;
+}
+
+.not-found-detail h2 {
+  font-size: 1.8rem;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+}
+
+.not-found-detail p {
+  color: #64748b;
+  margin-bottom: 1.5rem;
+}
+
+.back-btn {
+  display: inline-block;
+  background: #2563eb;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: var(--transition-3d);
+}
+
+.back-btn:hover {
+  transform: translateY(-2px);
+}
